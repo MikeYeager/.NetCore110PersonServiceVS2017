@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  samplevs:
+    image: user/samplevs
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
